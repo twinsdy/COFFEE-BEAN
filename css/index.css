@@ -1,0 +1,221 @@
+@charset "utf-8";
+
+@import url(header.css);
+@import url(footer.css);
+
+/* 
+font
+
+1) merriweather 폰트 (영문)
+font-family: "Merriweather", serif;
+font-weight: 300 ~ 900;
+
+2) nanum gothic 폰트 (한글)
+font-family: "Nanum Gothic", sans-serif;
+font-weight: 400 | 700 | 800;
+
+*/
+
+
+
+/*** MAIN ***************************************************************************************/
+
+main {
+    margin-top: 140px;
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+main .promotion {
+    width: 100%;
+    max-width: 1920px;
+
+    margin: 0 auto;
+    height: 700px;
+    background: url(../img/main_forest.jpg) no-repeat center top/cover;
+}
+main .promotion a {
+    /* background-color: plum; */
+    font-size: 0;
+    width: 100%;
+    height: 100%;
+}
+
+main .event {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+main .event img {
+    width: 100%;
+    display: block;
+}
+
+
+/*** SECTION ***************************************************************************************/
+section {}
+section > article {}
+
+article.md-pick {
+    width: 1280px;
+    margin: 0 auto 100px;
+    
+}
+
+article.md-pick .md-wrap {
+    /* background-color: plum; */
+    text-align: center;
+}
+article.md-pick .md-wrap .md-box {
+    width: 25%;
+    float: left;
+    
+}
+
+.md-box .photo {
+    margin-bottom: 30px;
+
+    position: relative; /* .quick 기준! */
+    /* outline: 3px solid red; */
+}
+.md-box .photo img {
+    width: 100%;
+    display: block;
+}
+.md-box .photo .quick {
+    background-color: rgb(243, 130, 0);
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: rgb(255,255,255);
+    letter-spacing: 1.2px;
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20%;
+
+    display: none;
+
+    /* top: 50%;
+    transform: translate(-50%,-50%); */
+}
+
+/* hover 적용!!! */
+.md-box .photo:hover img {
+    opacity: 0.4;
+}
+.md-box .photo:hover .quick {
+    display: inline-block;
+}
+
+.md-box .caption {
+    padding: 0 5%;
+}
+.md-box .caption h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.md-box .caption p {
+    margin-bottom: 10px;
+}
+.md-box .caption p.des {}
+.md-box .caption p.price {
+    color: rgb(207,102,26);
+    font-weight: 700;
+}
+
+
+article.new {
+    width: 1280px;
+    margin: 0 auto 100px;
+    /* background-color: greenyellow; */
+}
+
+article.new .new-box {
+    
+    width: 32%;
+    float: left;
+}
+article.new .new-box ~ .new-box {
+    margin-left: 2%;
+}
+
+article.new .new-box > a { /* img를 담는 박스! */
+    margin-bottom: 30px;
+    overflow: hidden;
+    /* outline: 3px solid red; */
+}
+article.new .new-box > a img {
+    width: 100%;
+    display: block;
+
+    transition: all 0.5s;
+}
+
+/* hover효과! */
+article.new .new-box > a:hover img {
+    transform: scale(1.5);
+}
+
+article.new .new-box h3 {
+    font-size: 18px;
+    text-align: center;
+    font-weight: 700;    
+}
+article.new .new-box h3 a {
+    color: rgb(207,102,26);
+}
+
+article.instagram {
+    width: 100%;
+    background-color: rgb(124,81,161);
+    padding: 60px 0;
+    /* text-align: center; */
+}
+article.instagram .sec-title {
+    color: rgb(255,255,255);
+    font-family: "Nanum Gothic", sans-serif;
+}
+
+article.instagram .thumb-list {
+    /* outline: 3px solid lime; */
+    margin-bottom: 50px;
+}
+article.instagram .thumb-list li {
+    width: 16.66%;
+    overflow: hidden;
+}
+article.instagram .thumb-list li a {}
+article.instagram .thumb-list li a img {
+    width: 100%;
+    display: block;
+    transition: all 0.6s;
+}
+
+/* hover 효과! */
+article.instagram .thumb-list li:hover img {
+    transform: scale(1.2);
+    opacity: 0.7;
+}
+
+article.instagram .follow-btn {
+    background-color: rgb(243, 130, 0);
+    color: rgb(255,255,255);
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Merriweather", serif;
+    text-transform: uppercase;
+
+    display: inline-block;
+    padding: 10px 20px;
+
+    /* 버튼 위치 조절 */
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
